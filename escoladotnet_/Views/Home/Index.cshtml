@@ -1,0 +1,69 @@
+﻿
+@{
+    var curso = ViewData["curso"] as Curso;
+}
+<h1>Nossos Cursos</h1>
+
+<div class="col-sm-12 col-md-12 col-lg-12">
+    <section class="content-site">
+        <div class="container col-12">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/Csharp1.png" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">@curso?.Nome</h5>
+                            <p class="card-text">@curso?.Descricao</p>
+                            <button type="button" class="btn btn-warning">inscreva-se</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/web-design.jpg" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Web Designer</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <button type="button" class="btn btn-warning">inscreva-se</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/JavaS.jpg" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Java Script</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <button type="button" class="btn btn-warning">inscreva-se</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/Machinelearning.png" alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <button type="button" class="btn btn-warning">inscreva-se</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+    </section>
